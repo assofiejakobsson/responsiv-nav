@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <script src="https://kit.fontawesome.com/f1f2235153.js" crossorigin="anonymous"></script>
+    <title>Responsive Navigation</title>
+</head>
+<body>
+  <div class="container">
+    <nav class="topnav" id="nav-b">
+        <ul class="nav-links">
+            <li><a class="active" herf="index.html">Home</a></li>
+            <li><a class="a" herf="News.html">News</a></li>
+            <li><a class="a" herf="Contact.html">Contact</a></li>
+            <li><a class="a" herf="About.html">About</a></li>
+            <a href="javascript:void(0);" class="icon" onclick="burger()">
+             <i class="fa fa-bars"></i>
+            </a>
+        </ul>
+    </nav>
+    <script>
+        function burger() {
+          var burger = document.getElementById("nav-b");
+          if (burger.className === "topnav") {
+            burger.className += " responsive";
+          } else {
+            burger.className = "topnav";
+          }
+        }
+    </script>
+  </div>
+
+  
+    
+</body>
+</html>
+    
